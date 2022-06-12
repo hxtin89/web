@@ -779,7 +779,21 @@ $databases['default']['default'] = [
 ];
 
 $settings['config_sync_directory'] = '/mnt/files/config/sync_dir';
-$settings['hash_salt'] = 'J63PQ+Xh9HVPP14w';
+$settings['hash_salt'] = 'Fo/yt5ZUnYWF+1Hg';
+
+$settings['trusted_host_patterns'] = array(
+    '\.localhost$', '\.local$', '\.loc$'
+);$databases['default']['default'] = [
+    'host' => 'mariadb',
+    'database' => 'drupal',
+    'username' => 'drupal',
+    'password' => 'drupal',
+    'driver' => 'mysql',
+    'prefix' => '',
+];
+
+$settings['config_sync_directory'] = '/mnt/files/config/sync_dir';
+$settings['hash_salt'] = 'SAzzsgjQFTjFwjwO';
 
 $settings['trusted_host_patterns'] = array(
     '\.localhost$', '\.local$', '\.loc$'
